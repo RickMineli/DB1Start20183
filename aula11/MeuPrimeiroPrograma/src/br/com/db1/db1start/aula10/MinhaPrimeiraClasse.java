@@ -7,7 +7,7 @@ public class MinhaPrimeiraClasse {
 		boolean eVerdadeNumeroImpar;
 		
 		//Operacoes
-		eVerdadeNumeroImpar = numeroASerVerificado% 2 >0;
+		eVerdadeNumeroImpar = numeroASerVerificado % 2 >0;
 		
 		//Apresentacao de dados
 		System.out.println("Olá Mundo!");
