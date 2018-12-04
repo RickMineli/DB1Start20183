@@ -1,5 +1,8 @@
 package br.com.db1.db1start.aula11;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Texto {
 
 	public String transformarParaMaiusculo(String texto) {
@@ -38,4 +41,26 @@ public class Texto {
 		aluno = aluno.concat(texto);
 		return aluno;
 	}
+	public String[] separarTextoPorPontoEVirgula(String texto) {
+		String array[] = new String[50];
+		array = texto.split(";");
+		return array;
+	}
+	public Integer mostrarQuantasVogais(String texto) {
+		Integer vogais =0;
+		texto = texto.toLowerCase();
+		for (int j = 0;j<texto.length();j++) {
+			 char c = texto.charAt(j);
+		        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+		        	vogais++;
+		}
+		return vogais;
+	}
+	public String inverterTexto(String texto) {
+		texto = texto.toLowerCase();
+		String invertido = new StringBuilder(texto).reverse().toString();
+		return invertido;
+	}
 }
+	
+

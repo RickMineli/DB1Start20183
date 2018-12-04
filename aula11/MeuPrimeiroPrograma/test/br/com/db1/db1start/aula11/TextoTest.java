@@ -1,5 +1,8 @@
 package br.com.db1.db1start.aula11;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -42,5 +45,24 @@ public class TextoTest {
 	public void deveSubstituirPrimeiraPalavraPorAluno() {
 		Assert.assertEquals("Aluno Mineli",meuTexto.substituirPrimeiraPalavraPorAluno("Ricardo Mineli"));
 	}
+	@Test
+	public void deveSepararTextoPorPontoEVirgula() {
+		String arrayActual[] = meuTexto.separarTextoPorPontoEVirgula("Ricardo ;Mineli");
+		String arrayExpect[] = new String[arrayActual.length];
+		arrayExpect[0] = "Ricardo ";
+		arrayExpect[1] = "Mineli";
+		Assert.assertArrayEquals(arrayExpect, arrayActual);
+	}
+	@Test
+	public void deveMostrarQuantasVogais() {
+		Assert.assertSame(3, meuTexto.mostrarQuantasVogais("Ricardo"));	
+	}
+	@Test
+	public void deveInverterOTexto() {
+		Assert.assertEquals("odracir", meuTexto.inverterTexto("ricArdo"));
+	}
+	
+	
+	
 	
 }
