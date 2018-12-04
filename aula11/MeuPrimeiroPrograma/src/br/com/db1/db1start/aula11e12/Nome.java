@@ -1,4 +1,4 @@
-package br.com.db1.db1start.aula11;
+package br.com.db1.db1start.aula11e12;
 
 public class Nome {
 	public String transformarParaLetraMaiscula(String nome) {

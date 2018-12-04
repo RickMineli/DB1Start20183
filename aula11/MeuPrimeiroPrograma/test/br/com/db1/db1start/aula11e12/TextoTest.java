@@ -1,10 +1,10 @@
-package br.com.db1.db1start.aula11;
+package br.com.db1.db1start.aula11e12;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import br.com.db1.db1start.aula11e12.Texto;
 
 public class TextoTest {
 	Texto meuTexto = new Texto();

@@ -1,7 +1,4 @@
-package br.com.db1.db1start.aula11;
-
-import java.util.ArrayList;
-import java.util.List;
+package br.com.db1.db1start.aula11e12;
 
 public class Texto {
 
@@ -47,9 +44,9 @@ public class Texto {
 		return array;
 	}
 	public Integer mostrarQuantasVogais(String texto) {
-		Integer vogais =0;
+		Integer vogais = 0;
 		texto = texto.toLowerCase();
-		for (int j = 0;j<texto.length();j++) {
+		for (int j = 0; j<texto.length(); j++) {
 			 char c = texto.charAt(j);
 		        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
 		        	vogais++;
